@@ -1,0 +1,13 @@
+body {
+    background: #efefef;
+    background: url('/images/uploads/tumblr_nk36aa9w6I1qk6k4do3_500.png');
+
+}
+
+* {
+    font-weight: bold;
+    text-shadow: 1px 1px white, -1px -1px white;
+}
+.thumb {
+    height: 75px;
+}
