@@ -1,0 +1,23 @@
+{
+  "name": "zodar",
+  "version": "1.0.0",
+  "description": "",
+  "main": ".eleventy.js",
+  "dependencies": {
+    "luxon": "^1.25.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arron21/zodar.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arron21/zodar/issues"
+  },
+  "homepage": "https://github.com/arron21/zodar#readme"
+}

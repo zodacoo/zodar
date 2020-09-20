@@ -1,13 +1,52 @@
 body {
-    background: #efefef;
-    background: url('/images/uploads/tumblr_nk36aa9w6I1qk6k4do3_500.png');
+  background: #efefef;
+  background: url("/images/uploads/tumblr_nk36aa9w6I1qk6k4do3_500.png");
 
+  background-color: #ea91aa;
 }
 
 * {
-    font-weight: bold;
-    text-shadow: 1px 1px white, -1px -1px white;
+  font-weight: bold;
+  text-shadow: 1px 1px white, -1px -1px white;
 }
 .thumb {
-    height: 75px;
+  height: 75px;
+}
+img {
+  max-width: 100px;
+}
+
+.animateBg {
+  animation: bgAnimation 300s linear infinite;
+}
+
+@keyframes bgAnimation {
+  100% {
+    /* transform: translateX(-50%) translateY(-50%); */
+    background-position: -100%;
+
+    @keyframes bgScroll {
+      0% {
+        background-position: 0 0;
+      }
+      100% {
+        background-position: -1024 1024;
+      }
+    }
+  }
+}
+
+@keyframes bgAnimation {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -500 500;
+  }
+}
+
+.body-container {
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(3px);
+  padding: 1em;
 }
