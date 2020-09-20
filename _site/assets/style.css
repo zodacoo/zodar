@@ -21,22 +21,6 @@ img {
 }
 
 @keyframes bgAnimation {
-  100% {
-    /* transform: translateX(-50%) translateY(-50%); */
-    background-position: -100%;
-
-    @keyframes bgScroll {
-      0% {
-        background-position: 0 0;
-      }
-      100% {
-        background-position: -1024 1024;
-      }
-    }
-  }
-}
-
-@keyframes bgAnimation {
   0% {
     background-position: 0 0;
   }
@@ -49,4 +33,28 @@ img {
   background: rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(3px);
   padding: 1em;
+}
+
+h1 {
+  text-align: center;
+}
+
+nav {
+  text-align: center;
+}
+
+nav a {
+  padding: 1em;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 2rem;
+}
+
+.gallery a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

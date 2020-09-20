@@ -11,8 +11,33 @@
       <h1>
         Zodar Site
       </h1>
-      {% include './nav.njk' %}
-      {{ content | safe }}
+      <nav>
+    <a href="/">home</a>
+    <a href="/posts">posts</a>
+    <a href="/projects">projects</a>
+    <a href="/contact">contact</a>
+</nav>
+      
+
+
+<div class="gallery">
+  
+</div>
+
+<ul>
+  
+    <li>
+      <strong>
+        <a href="/projects/project1/">My first project</a>
+      </strong>
+        <img class="thumb" src="/images/uploads/squirtle.png" alt="/images/uploads/squirtle.png"></img>
+      -
+      <time datetime="20-04-18">18-04-20</time>
+      -
+      <span>This is a link to a game i built</span>
+    </li>
+  
+</ul>
     </div>
 
     <script>
