@@ -3,8 +3,25 @@ layout: layouts/base.njk
 permalink: /contact/
 ---
 <h2>Get In Contact</h2>
-<input type="text" />
-<br />
-<textarea></textarea>
-<br />
-<button>Send Email</button>
+<form name="contact"  netlify netlify-honeypot="bot-field">
+<p class="hidden">
+    <label><input name="bot-field" /></label>
+  </p>
+  <p>
+    <label>Name</label> 
+    <br/>
+    <input type="text" name="name" />
+  </p>
+  <p>
+    <label>Email</label>
+    <br/><input type="email" name="email" />
+  </p>
+    <p>
+        <label>Message</label> <br/>
+
+    <textarea name="message"></textarea>
+  </p>
+  <p>
+    <button type="submit">Send</button>
+  </p>
+</form>

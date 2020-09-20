@@ -17,7 +17,7 @@ img {
 }
 
 .animateBg {
-  animation: bgAnimation 300s linear infinite;
+  animation: bgAnimation 250s linear infinite;
 }
 
 @keyframes bgAnimation {
@@ -57,4 +57,8 @@ nav a {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.hidden {
+  display: none;
 }
