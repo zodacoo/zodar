@@ -4,11 +4,18 @@
   "description": "",
   "main": ".eleventy.js",
   "dependencies": {
+    "@11ty/eleventy-navigation": "^0.1.6",
+    "clean-css": "^4.2.1",
+    "html-minifier": "^4.0.0",
+    "uglify-es": "^3.3.9"
+  },
+  "devDependencies": {
     "luxon": "^1.25.0"
   },
-  "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npx eleventy",
+    "watch": "npx eleventy --watch",
+    "debug": "DEBUG=* npx eleventy"
   },
   "repository": {
     "type": "git",
