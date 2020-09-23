@@ -1,9 +1,8 @@
 ---
 layout: layouts/post.njk
-title: My first project
-description: This is a link to a game i built
+title: VIDOES TUBER
+description: let's building a v.tuber
 date: 2020-04-18
-featuredImage: /images/uploads/squirtle.png
+featuredImage: /images/uploads/centipose1.png
 ---
-
-This is a good project
+hrguuuuuuuu
