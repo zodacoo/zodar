@@ -1,23 +1,27 @@
 body {
   background: #efefef;
-  background: url("/images/uploads/tumblr_nk36aa9w6I1qk6k4do3_500.png");
+  background: url("/images/uploads/SHAKUDOGUBG_NIGHT.png");
+  /* Dimensions of dogu bg are 577x576*/
 
-  background-color: #ea91aa;
-}
-
-* {
+  background-color: #161422;
+  
+  font-family: 'Inconsolata', monospace;
   font-weight: bold;
-  text-shadow: 1px 1px white, -1px -1px white;
+  color: white;
+  /* text-shadow: 1px 1px white, -1px -1px white; */
 }
+
 .thumb {
   height: 75px;
 }
-img {
-  max-width: 100px;
+.post img {
+  margin: auto;
+  display: block;
+  max-width: 100%;
 }
 
 .animateBg {
-  animation: bgAnimation 250s linear infinite;
+  animation: bgAnimation 30s linear infinite;
 }
 
 @keyframes bgAnimation {
@@ -25,13 +29,13 @@ img {
     background-position: 0 0;
   }
   100% {
-    background-position: -500 500;
+    background-position: -577 576;
   }
 }
 
 .body-container {
-  background: rgba(255, 255, 255, 0.3);
-  backdrop-filter: blur(3px);
+  background: rgba(9, 5, 41, 0.623);
+  backdrop-filter: blur(10px);
   padding: 1em;
 }
 
@@ -43,8 +47,17 @@ nav {
   text-align: center;
 }
 
-nav a {
+a {
   padding: 1em;
+  color: rgb(255, 112, 77)
+}
+/* nav a:before
+{
+  content: "goku";
+} */
+a:visited 
+{
+  color: rgb(158, 88, 67);
 }
 
 .gallery {
