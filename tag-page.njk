@@ -1,0 +1,22 @@
+---
+layout: layouts/base.njk
+pagination:
+  data: collections
+  size: 1
+  alias: tag
+permalink: /tags/{{ tag }}/
+---
+<h1>Tagged “{{ tag }}”</h1>
+
+
+{% set taglist = collections[ tag ] %}
+
+{% for post in taglist | reverse %}
+  <a href="{{ post.url | url }}">{{ post.data.title }}</a>
+
+    <div class="gallery__item">
+        <a href="{{ post.url | url }}">
+            <img class="thumb" src="{{ post.data.featuredImage }}" alt="{{ post.data.featuredImage }}" />
+        </a>
+    </div>   
+{% endfor %}
