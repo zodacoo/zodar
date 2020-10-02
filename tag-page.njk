@@ -14,6 +14,19 @@ permalink: /tags/{{ tag }}/
 {% for post in taglist | reverse %}
   <a href="{{ post.url | url }}">{{ post.data.title }}</a>
 
+
+          {% for tag in post.data.tags %}
+            {% if tag  == 'projects'%}
+
+            {% else %}
+
+
+            <a href="/tags/{{tag}}">{{tag}}</a>
+
+            
+            {% endif %}
+          {% endfor %}
+
     <div class="gallery__item">
         <a href="{{ post.url | url }}">
             <img class="thumb" src="{{ post.data.featuredImage }}" alt="{{ post.data.featuredImage }}" />
