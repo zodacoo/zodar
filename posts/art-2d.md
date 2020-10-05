@@ -1,11 +1,10 @@
 ---
 layout: layouts/post.njk
-title: My 2nd post
+title: 2d
 description: The first post on the Eleventy + Netlify CMS from scratch blog
 date: 2020-04-18
 featuredImage: /images/uploads/squirtle.png
+tags: ["posts", "art", "two-dimensional"]
 ---
 
-Hello, here is the body of the post.
-
-if i make a change and save the file
+This is a test for 2d art

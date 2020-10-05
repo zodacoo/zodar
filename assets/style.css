@@ -4,8 +4,8 @@ body {
   /* Dimensions of dogu bg are 577x576*/
 
   background-color: #161422;
-  
-  font-family: 'Inconsolata', monospace;
+
+  font-family: "Inconsolata", monospace;
   font-weight: bold;
   color: white;
   /* text-shadow: 1px 1px white, -1px -1px white; */
@@ -49,14 +49,13 @@ nav {
 
 a {
   padding: 1em;
-  color: rgb(255, 112, 77)
+  color: rgb(255, 112, 77);
 }
 /* nav a:before
 {
   content: "goku";
 } */
-a:visited 
-{
+a:visited {
   color: rgb(158, 88, 67);
 }
 
@@ -66,8 +65,9 @@ a:visited
   grid-gap: 2rem;
 }
 
-.gallery a {
+.gallery .gallery__item {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }

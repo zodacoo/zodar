@@ -1,0 +1,36 @@
+{# <ul>
+  {% for post in postslist %}
+    <li>
+      <strong>
+        <a href="{{ post.url | url }}">{{ post.data.title }}</a>
+      </strong>
+        <img class="thumb" src="{{ post.data.featuredImage }}" alt="{{ post.data.featuredImage }}"></img>
+      -
+      <time datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
+      -
+      <span>{{ post.data.description }}</span>
+    </li>
+  {% endfor %}
+</ul> #}
+
+
+<div class="gallery">
+  {% for post in postslist %}
+
+
+  <div class="gallery__item">
+                  
+        <a  href="{{ post.url | url }}">
+          <img class="thumb" src="{{ post.data.featuredImage }}" alt="{{ post.data.featuredImage }}" />
+        </a>
+
+        <small>
+          {% for tag in post.data.tags %}
+            <a href="/tags/{{tag}}">{{tag}}</a>
+          {% endfor %}
+        </small>
+      </div>
+
+   
+  {% endfor %}
+</div>
