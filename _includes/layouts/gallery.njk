@@ -13,8 +13,29 @@
   {% endfor %}
 </ul> #}
 
+    <div ID="ngy2p" data-nanogallery2='{
+        "itemsBaseURL": "",
+        "thumbnailWidth": "200",
+        "colorScheme": {
+          "thumbnail": {
+            "background": ""
+          }
+        },
+        "thumbnailLabel": {
+          "position": "overImageOnBottom"
+        },
+        "thumbnailAlignment": "center",
+        "thumbnailOpenImage": true
+      }'>
+        {% for post in postslist %}
 
-<div class="gallery">
+      <a href="{{ post.data.featuredImage }}" data-ngthumb="{{ post.data.featuredImage }}" data-ngdesc=""></a>
+
+{% endfor %}
+    </div>
+
+
+{# <div class="gallery">
   {% for post in postslist %}
 
 
@@ -33,4 +54,4 @@
 
    
   {% endfor %}
-</div>
+</div> #}
