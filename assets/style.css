@@ -51,6 +51,11 @@ nav {
   text-align: center;
 }
 
+nav a {
+  margin: 1em;
+  display: inline-flex;
+}
+
 a {
   padding: 1em;
   color: rgb(255, 112, 77);
