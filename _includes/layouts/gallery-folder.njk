@@ -1,0 +1,19 @@
+<div ID="ngy2p" data-nanogallery2='{
+    "itemsBaseURL": "",
+    "thumbnailWidth": "200",
+    "colorScheme": {
+      "thumbnail": {
+        "background": ""
+      }
+    },
+    "thumbnailLabel": {
+      "position": "overImageOnBottom"
+    },
+    "thumbnailAlignment": "center",
+    "thumbnailOpenImage": true
+  }'>
+    {% for image in collections.gallery %}
+    {{image}}
+      <a href="/assets/{{image}}" data-ngthumb="/assets/{{image}}" data-ngdesc=""></a>
+    {% endfor %}
+</div>

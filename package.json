@@ -13,6 +13,7 @@
   "dependencies": {
     "@11ty/eleventy-navigation": "^0.1.6",
     "clean-css": "^4.2.1",
+    "fast-glob": "^3.2.4",
     "html-minifier": "^4.0.0",
     "uglify-es": "^3.3.9"
   },
